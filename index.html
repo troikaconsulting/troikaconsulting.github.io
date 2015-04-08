@@ -63,11 +63,14 @@
 <link rel="apple-touch-icon" sizes="72x72" href="#">
 <link rel="apple-touch-icon" sizes="144x144" href="#">
 
+<!-- For Ubuntu Font -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:700' rel='stylesheet' type='text/css'>
+
 <!-- Modernizr -->
 <script src="./_include/js/modernizr.js"></script>
 
 <!-- Analytics -->
-<script type="./text/javascript">
+<script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'Insert Your Code']);
@@ -97,22 +100,31 @@
 
 <!-- Homepage Slider -->
 <div id="home-slider">	
-    <div class="overlay"></div>
+    <div class="span3"></div>
+        <div id="title-logo-wrap" class="span6">
+        <!-- <img id="title-logo" src="_include/img/troika.png"/> -->
+        <p id="home-title"> Troika</p><br/><br/><br/>
+        <p id="tagline">Taking your business to new heights<br/>with cutting edge technologies</p></div>
+     <div class="overlay">
+
+
+     </div>
 
     <!-- <div class="slider-text">
     	<div id="slidecaption">
             <div id="slide-content">Troika</div>   
         </div>
     </div>   --> 
-	<div class="control-nav">
-   <!--      <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
+<!-- 	<div class="control-nav">
+        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
         <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
-        <ul id="slide-list"></ul>
-         -->
+        <ul id="slide-list"></ul> -->
+        <div class="next-section">
         <a id="nextsection" href="#services"><i class="font-icon-arrow-simple-down"></i></a>
-    </div>
-</div>
-<!-- End Homepage Slider -->
+        </div>
+<!--     </div>
+ --></div>
+<!-- End Homepage Slider
 
 <!-- Header -->
 <header>
@@ -129,7 +141,7 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
-				<li><a href="shortcodes.html" class="external">Shortcodes</a></li>
+				<!-- <li><a href="shortcodes.html" class="external">Shortcodes</a></li> -->
             </ul>
         </nav>
         
