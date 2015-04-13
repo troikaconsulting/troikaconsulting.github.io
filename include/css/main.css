@@ -677,12 +677,24 @@ nav#menu #menu-nav li a:hover {
 	margin-bottom: 100px;	
 }
 
+#contact-title-page{
+	margin-bottom: 50px;	
+
+}
+
 .title-page .title {
 	font-size: 48px;
 	margin: 0 0 10px 0
 }
 
 .title-page .title-description {
+	font-size: 32px;
+	font-weight: 200;
+	margin: 0;
+	margin-bottom:100px;
+}
+
+.title-page .title-description2 {
 	font-size: 32px;
 	font-weight: 200;
 	margin: 0;
@@ -991,10 +1003,9 @@ nav#menu #menu-nav li a:hover {
     text-transform: uppercase;
 }
 
-.contact-details ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;	
+.contact-details {
+	font-size:24px;	
+
 }
 
 .contact-details ul li {
