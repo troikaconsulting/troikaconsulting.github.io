@@ -294,10 +294,14 @@ h3.spec {
 
 #home-title{
 	font-family:'Ubuntu', sans-serif;
-	font-size:200px;
+	font-size:100px;
 	color: #26292E;
 	text-align:center;
-	margin-top:35%;
+	margin-top:25%;
+}
+
+.small{
+	font-size:70px;
 }
 
 #tagline{
