@@ -402,33 +402,33 @@ BRUSHED.toolTip = function(){
 BRUSHED.slider();
 
 $(document).ready(function(){
-	Modernizr.load([
-	{
-		test: Modernizr.placeholder,
-		nope: 'include/js/placeholder.js', 
-		complete : function() {
-				if (!Modernizr.placeholder) {
-						Placeholders.init({
-						live: true,
-						hideOnFocus: false,
-						className: "yourClass",
-						textColor: "#999"
-						});    
-				}
-		}
-	}
-	]);
+	// Modernizr.load([
+	// {
+	// 	test: Modernizr.placeholder,
+	// 	nope: 'include/js/placeholder.js', 
+	// 	complete : function() {
+	// 			if (!Modernizr.placeholder) {
+	// 					Placeholders.init({
+	// 					live: true,
+	// 					hideOnFocus: false,
+	// 					className: "yourClass",
+	// 					textColor: "#999"
+	// 					});    
+	// 			}
+	// 	}
+	// }
+	// ]);
 	
 	// Preload the page with jPreLoader
-	$('body').jpreLoader({
-		splashID: "#jSplash",
-		showSplash: true,
-		showPercentage: true,
-		autoClose: true,
-		splashFunction: function() {
-			$('#circle').delay(250).animate({'opacity' : 1}, 500, 'linear');
-		}
-	});
+	// $('body').jpreLoader({
+		// splashID: "#jSplash",
+		// showSplash: true,
+		// showPercentage: true,
+		// autoClose: true,
+		// splashFunction: function() {
+		// 	$('#circle').delay(250).animate({'opacity' : 1}, 500, 'linear');
+		// }
+	// });
 	
 	BRUSHED.nav();
 	BRUSHED.mobileNav();
@@ -451,4 +451,12 @@ $(window).resize(function(){
 	BRUSHED.mobileNav();
 });
 
+});
+
+$(function(){
+	$("#body").attr("visibility","hidden");
+});
+
+$(window).load(function(){
+	$("#body").attr("visibility","visible");
 });
