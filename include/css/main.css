@@ -12,6 +12,11 @@ Version: 1.0
    Basic Styles
 ================================================== */
 
+@font-face {
+    font-family: "Fairview";
+    src: url("../Fairview_Regular.otf") format("opentype");
+}
+
 html, body {
 	height: 100%;
 }
@@ -206,16 +211,20 @@ h6{
 	margin:0 0 20px 0;
 	color:#FFFFFF;
 	font-weight:300;
-	font-family: 'Titillium Web', sans-serif;
+	font-family:'Titillium Web', sans-serif;
 	line-height:1.5em;
 }
 
 h1{
-	font-size:48px;
+	font-size:60px;
+	font-family: 'Fairview','Titillium Web', sans-serif;
+
 }
 
 h2{
-	font-size:36px;
+	font-size:48px;
+	font-family: 'Fairview','Titillium Web', sans-serif;
+
 }
 
 h3{
@@ -319,7 +328,10 @@ h3.spec {
 }
 
 #home-slider {
-	background-image:url("../img/slider-images/image01.jpg");
+	background: -webkit-linear-gradient(black, #2F3238); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, #2F3238); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#26292E, #2F3238); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0c0d0f, #2F3238); /* Standard syntax (must be last) */
 	background-size:100%;
 	position: relative;
 	overflow: hidden;
@@ -356,6 +368,7 @@ h3.spec {
 
 #home-slider .slide-content {
 	font-size: 60px;
+
 	color: #FFFFFF;
 	letter-spacing: -3px;
 	text-transform: uppercase;	
@@ -446,7 +459,7 @@ h3.spec {
 }
 
 #home-slider ul#slide-list li a {
-	background-color: #6E7074;
+	background-color: blue;
 	background-image: none;
 	width: 12px;
 	height: 12px;
@@ -694,7 +707,7 @@ nav#menu #menu-nav li a:hover {
 }
 
 .title-page .title {
-	font-size: 48px;
+	font-size: 72px;
 	margin: 0 0 10px 0
 }
 
@@ -832,6 +845,8 @@ nav#menu #menu-nav li a:hover {
 
 .profile-name {
 	margin-bottom: 15px;	
+	font-family:'Fairview','Titillium Web', sans-serif;
+	font-size:36px;
 }
 
 .profile-description {
